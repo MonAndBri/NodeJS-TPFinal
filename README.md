@@ -27,14 +27,14 @@ Incluye autenticación mediante JWT y endpoints protegidos para operaciones CRUD
 ## 📁 Estructura del proyecto
 
 /api
-└── products.js # Funciones API para productos
+└── products.js      # Funciones API para productos
 /auth
-└── login.js # Funciones para login
+└── login.js         # Funciones para login
 src/
-├── routes/ # Rutas de la API
-├── controllers/ # Lógica de controladores
-├── data/ # Datos de ejemplo o DB
-└── app.js # Configuración de Express
+├── routes/          # Rutas de la API
+├── controllers/     # Lógica de controladores
+├── data/            # Datos de ejemplo o DB
+└── app.js           # Configuración de Express
 package.json
 vercel.json
 README.md
@@ -105,6 +105,7 @@ Las rutas /api/products requieren Authorization: Bearer <JWT_TOKEN> excepto /aut
 
 ** MonAndBri **
 Repositorio: https://github.com/MonAndBri/NodeJS-TPFinal
+
 
 
 
