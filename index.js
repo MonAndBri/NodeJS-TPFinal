@@ -30,6 +30,11 @@ app.use((req, res, next) => {
 app.use('/auth', authRouter);
 app.use("/api", productsRouter);
 
+// Agrego ésto para evitar el error 404 al desplegar en vercel
+app.get("/", (req, res) => {
+    res.send("API OK - NodeJS TP Final");
+});
+
 // Middleware para manejar rutas desconocidas
 app.use((req, res, next) => {
     res.status(404).send('Recurso no encontrado o ruta inválida');
